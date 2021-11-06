@@ -1,0 +1,14 @@
+CREATE OR REPLACE FUNCTION get_game_total_price(game_id int4)
+RETURNS INTEGER AS $total$
+DECLARE
+    total INTEGER;
+BEGIN
+    SELECT sum(price) INTO total
+    FROM bets
+    WHERE fk_game = game_id;
+    RETURN total;
+END;
+$total$ LANGUAGE plpgsql;
+
+SELECT sum(price) FROM bets WHERE fk_game = 1;
+SELECT get_game_total_price(1);
