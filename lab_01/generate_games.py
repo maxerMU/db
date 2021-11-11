@@ -25,10 +25,11 @@ try:
         team2 = fake.city()
         team1_goals = randint(0, 10)
         team2_goals = randint(0, 10)
+        is_finished = randint(0, 1)
         sql_insert = f"""INSERT INTO games (pk, home_team_name, away_team_name,
-                                            home_team_goals, away_team_goals) 
+                                            home_team_goals, away_team_goals, is_finished) 
                                  VALUES ({i}, \'{team1}\', \'{team2}\',
-                                                   {team1_goals}, {team2_goals});"""
+                                                   {team1_goals}, {team2_goals}, {is_finished});"""
         cursor.execute(sql_insert)
         connection.commit()
 

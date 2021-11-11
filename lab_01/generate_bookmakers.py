@@ -28,7 +28,7 @@ try:
         is_official = randint(0, 1)
         parent_id = None
         if i > 0 and randint(0, 20):
-            parent_id = randint(0, i)
+            parent_id = randint(0, i - 1)
         sql_insert = None
         if parent_id is None:
             sql_insert = f"""INSERT INTO bookmakers (pk, name, country, foundation_date,

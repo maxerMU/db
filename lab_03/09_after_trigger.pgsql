@@ -29,4 +29,4 @@ INSERT ON bets
 FOR ROW EXECUTE PROCEDURE print_bet_res();
 
 INSERT INTO bets(fk_bookmaker, fk_game, fk_customer, customer_prediction, coefficient, price, state)
-VALUES (0, 1, 0, 2, 1.5, 102, 0);
+VALUES (1, 1, 0, 2, 1.5, 102, 0);

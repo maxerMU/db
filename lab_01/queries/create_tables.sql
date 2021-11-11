@@ -25,6 +25,8 @@ CREATE table games (
     away_team_name TEXT not NULL,
     home_team_goals INTEGER not NULL,
     away_team_goals INTEGER not NULL,
+    is_finished INTEGER not NULL,
+    CONSTRAINT finished_bool CHECK (is_finished >= 0 and is_finished <= 1),
     CONSTRAINT positive_home_goals CHECK (home_team_goals >= 0),
     CONSTRAINT positive_away_goals CHECK (away_team_goals >= 0)
 );

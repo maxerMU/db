@@ -7,6 +7,6 @@ BEGIN
 END;
 $$ LANGUAGE PLPGSQL;
 
-CALL bets_paid(1);
+CALL bets_paid(2);
 
-SELECT state from bets WHERE fk_game=1;
+SELECT state from bets WHERE fk_game=2;

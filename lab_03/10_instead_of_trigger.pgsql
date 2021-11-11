@@ -42,7 +42,7 @@ INSERT INTO games_view (
     is_finished
 )
 VALUES (
-    1002,
+    1003,
     'Manchester United',
     'Aston villa',
     0,
