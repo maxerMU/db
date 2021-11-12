@@ -16,4 +16,4 @@ BEGIN
 END;
 $$ LANGUAGE PLPGSQL;
 
-SELECT * FROM bookmakers_by_depth(0);
+-- SELECT * FROM bookmakers_by_depth(0);

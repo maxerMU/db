@@ -28,5 +28,5 @@ CREATE TRIGGER trg_print_bet_res AFTER
 INSERT ON bets
 FOR ROW EXECUTE PROCEDURE print_bet_res();
 
-INSERT INTO bets(fk_bookmaker, fk_game, fk_customer, customer_prediction, coefficient, price, state)
-VALUES (1, 1, 0, 2, 1.5, 102, 0);
+-- INSERT INTO bets(fk_bookmaker, fk_game, fk_customer, customer_prediction, coefficient, price, state)
+-- VALUES (1, 1, 0, 2, 1.5, 102, 0);

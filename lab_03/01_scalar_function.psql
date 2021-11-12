@@ -10,5 +10,5 @@ BEGIN
 END;
 $total$ LANGUAGE plpgsql;
 
-SELECT sum(price) FROM bets WHERE fk_game = 1;
-SELECT get_game_total_price(1);
+-- SELECT sum(price) FROM bets WHERE fk_game = 1;
+-- SELECT get_game_total_price(1);

@@ -18,4 +18,4 @@ BEGIN
 END;
 $$ LANGUAGE PLPGSQL;
 
-call bookmakers_list_by_country('Ukraine');
+-- call bookmakers_list_by_country('Ukraine');

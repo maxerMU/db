@@ -1,7 +1,7 @@
 CREATE OR REPLACE FUNCTION no_united_home_lose() RETURNS TRIGGER AS $$
 BEGIN
     IF lower(NEW.home_team_name) like '%manchester united%' AND NEW.home_team_goals < NEW.away_team_goals THEN
-        RAISE NOTICE 'united can not lose at Old Trafford. belive in solscjaer';
+        RAISE NOTICE 'United can not lose at Old Trafford. Believe in Solscjaer';
     ELSE 
         INSERT INTO games (
             pk,
@@ -33,19 +33,19 @@ CREATE TRIGGER trg_no_united_home_lose INSTEAD OF
 INSERT ON games_view
 FOR EACH ROW EXECUTE PROCEDURE no_united_home_lose();
 
-INSERT INTO games_view (
-    pk,
-    home_team_name,
-    away_team_name,
-    home_team_goals,
-    away_team_goals,
-    is_finished
-)
-VALUES (
-    1003,
-    'Manchester United',
-    'Aston villa',
-    0,
-    1,
-    1
-);
+-- INSERT INTO games_view (
+--     pk,
+--     home_team_name,
+--     away_team_name,
+--     home_team_goals,
+--     away_team_goals,
+--     is_finished
+-- )
+-- VALUES (
+--     1003,
+--     'Manchester United',
+--     'Aston villa',
+--     0,
+--     1,
+--     1
+-- );

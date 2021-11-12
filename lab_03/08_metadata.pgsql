@@ -13,4 +13,4 @@ BEGIN
 END;
 $$ LANGUAGE PLPGSQL;
 
-CALL get_db_metadata('betsdb');
+-- CALL get_db_metadata('betsdb');

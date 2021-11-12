@@ -15,5 +15,5 @@ BEGIN
 END;
 $$ LANGUAGE PLPGSQL;
 
-CALL find_root_bookmaker(10);
+-- CALL find_root_bookmaker(10);
 

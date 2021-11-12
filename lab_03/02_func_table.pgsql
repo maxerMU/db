@@ -9,4 +9,4 @@ BEGIN
 END
 $$ LANGUAGE PLPGSQL;
 
-SELECT * FROM get_official_bookmakers();
+-- SELECT * FROM get_official_bookmakers();

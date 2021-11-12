@@ -16,4 +16,4 @@ BEGIN
 END;
 $$ LANGUAGE PLPGSQL;
 
-SELECT * FROM w1_wins();
+-- SELECT * FROM w1_wins();
